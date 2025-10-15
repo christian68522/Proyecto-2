@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Calculadora — Proyecto 2</title>
+  <meta name="description" content="Calculadora básica con HTML, CSS y JS que respeta jerarquía de operaciones." />
+  <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+  <main class="app">
+    <header class="app__header">
+      <h1>Calculadora</h1>    
+    </header>
+    <section class="calc">
+      <div class="screen" id="screen" aria-live="polite" title="Pantalla">
+      </div>
+      <div class="keys" role="group" aria-label="Teclas de la calculadora">
+        <button class="key key--util" data-action="clear" aria-label="Limpiar (C)">C</button>
+        <button class="key key--util" data-action="backspace" aria-label="Borrar último">⌫</button>
+        <button class="key key--op" data-value="÷" aria-label="Dividir">÷</button>
+        <button class="key key--op" data-value="×" aria-label="Multiplicar">×</button>
+        <button class="key" data-value="7">7</button>
+        <button class="key" data-value="8">8</button>
+        <button class="key" data-value="9">9</button>
+        <button class="key key--op" data-value="-">-</button>
+        <button class="key" data-value="4">4</button>
+        <button class="key" data-value="5">5</button>
+        <button class="key" data-value="6">6</button>
+        <button class="key key--op" data-value="+">+</button>
+        <button class="key" data-value="1">1</button>
+        <button class="key" data-value="2">2</button>
+        <button class="key" data-value="3">3</button>
+        <button class="key key--eq" data-action="equals">=</button>
+        <button class="key key--wide" data-value="0">0</button>
+        <button class="key" data-value=".">.</button>
+      </div>
+    </section>
+  </main>
+  <script src="./js/app.js"></script>
+</body>
+</html>
